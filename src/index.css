@@ -35,10 +35,30 @@ header > img {
   background-image: linear-gradient(to left, #002c56, #005c5c);
   border-radius: 5px;
   scale: 90%;
+  z-index: 50;
+  transition: 5000ms;
 }
 
 .player-card:nth-child(odd) {
   background-image: linear-gradient(to right, #002c56, #005c5c);
+}
+
+.player-card:nth-child(odd):hover {
+  background-image: linear-gradient(to left, #002c56, #005c5c);
+  transition: 500ms;
+  .headshot {
+    scale: 120%;
+    transition: 500ms;
+  }
+}
+
+.player-card:nth-child(even):hover {
+  background-image: linear-gradient(to right, #002c56, #005c5c);
+  transition: 5000ms;
+  .headshot {
+    scale: 120%;
+    transition: 500ms;
+  }
 }
 
 .name,
