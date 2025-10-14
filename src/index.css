@@ -12,8 +12,13 @@ header, footer {
   align-items: center;
   gap: 2rem;
   color: white;
-  background-color: #005c5c;
+  background-image: linear-gradient(to right, #002c56, #005c5c);
   padding: 10px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #005c5c, #002c56);
+
 }
 
 header > img {
