@@ -1,15 +1,18 @@
 import React from "react";
+import Teams from "./Teams";
 
-function PlayerCard(players) {
+function PlayerCard(player) {
+  console.log(player);
   return (
     <>
       <div className="player-card">
-        <img src={players.img} alt={players.name} />
-        <h3>{players.name}</h3>
-        <p className="position">Position {players.position}</p>
-        <p className="jersey">#{players.jersey}</p>
-        <p className="age">Age: {players.name}</p>
-        <p className="stats">Batting AVG: {players.stat}</p>
+        <img src={player.img} alt={player.name} />
+        <h3>{player.name}</h3>
+        <p className="position">Position {player.position}</p>
+        <p className="jersey">#{player.jersey}</p>
+        <p className="age">Age: {player.name}</p>
+        <p className="stats">Batting: {player.stat}</p>
+        <Teams teams={player.teams} />
       </div>
     </>
   );
