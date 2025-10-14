@@ -2,11 +2,20 @@
   margin: 0;
 }
 
-header {
+body {
+  background-color: grey
+}
+
+header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   color: white;
-  background-color: aqua
+  background-color: #005c5c;
+  padding: 10px;
+}
+
+header > img {
+  width: 100px;
 }
