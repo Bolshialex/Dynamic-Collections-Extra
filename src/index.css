@@ -45,7 +45,7 @@ header > img {
 .player-card:hover {
   border: 5px solid white;
   .headshot {
-    scale: 120%;
+    scale: 130%;
     transition: 500ms;
   }
 }
