@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: "Cabin", Helvetica, sans-serif;
 }
 
 body {
@@ -33,10 +34,19 @@ header > img {
   display: flex;
   justify-content: space-around;
   background-image: linear-gradient(to left, #002c56, #005c5c);
-  border-radius: 5px;
+  border-radius: 8px;
   scale: 90%;
-  z-index: 50;
-  transition: 5000ms;
+  border: white 1px solid;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: 250ms;
+}
+
+.player-card:hover {
+  .headshot {
+    scale: 110%;
+    transition: 250ms;
+  }
 }
 
 .player-card:nth-child(odd) {
@@ -65,7 +75,14 @@ header > img {
 .position,
 .jersey,
 .age,
-.stats {
+.stats,
+.teams {
   display: flex;
   align-items: center;
+  color: white;
+  font-size: 15px;
+}
+
+.name {
+  font-size: 25px;
 }

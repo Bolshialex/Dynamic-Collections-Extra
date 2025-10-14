@@ -10,7 +10,7 @@ function PlayerCard(player) {
         <h3 className="name">{player.name}</h3>
         <p className="position">Position {player.position}</p>
         <p className="jersey">#{player.jersey}</p>
-        <p className="age">Age: {player.name}</p>
+        <p className="age">Age: {player.age}</p>
         <p className="stats">Batting: {player.stat}</p>
         <Teams teams={player.teams} />
       </div>
