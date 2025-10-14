@@ -4,9 +4,9 @@ export default function Teams({ teams }) {
     
     return (
         <div className="teams">
-            <ol>
+            <ul>
                 {teamsListItems}
-            </ol>
+            </ul>
         </div>
     )
 }
