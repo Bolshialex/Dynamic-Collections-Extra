@@ -3,10 +3,11 @@
 }
 
 body {
-  background-color: grey
+  background-color: grey;
 }
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,10 +18,34 @@ header, footer {
 }
 
 footer {
-    background-image: linear-gradient(to right, #005c5c, #002c56);
-
+  background-image: linear-gradient(to right, #005c5c, #002c56);
 }
 
 header > img {
   width: 100px;
+}
+
+.container {
+}
+
+.player-card {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to left, #002c56, #005c5c);
+  border-radius: 5px;
+  scale: 90%;
+}
+
+.player-card:nth-child(odd) {
+  background-image: linear-gradient(to right, #002c56, #005c5c);
+}
+
+.name,
+.position,
+.jersey,
+.age,
+.stats {
+  display: flex;
+  align-items: center;
 }

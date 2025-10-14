@@ -6,8 +6,8 @@ function PlayerCard(player) {
   return (
     <>
       <div className="player-card">
-        <img src={player.img} alt={player.name} />
-        <h3>{player.name}</h3>
+        <img src={player.img} alt={player.name} className="headshot" />
+        <h3 className="name">{player.name}</h3>
         <p className="position">Position {player.position}</p>
         <p className="jersey">#{player.jersey}</p>
         <p className="age">Age: {player.name}</p>
