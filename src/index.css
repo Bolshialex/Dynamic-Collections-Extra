@@ -43,9 +43,10 @@ header > img {
 }
 
 .player-card:hover {
+  border: 5px solid white;
   .headshot {
-    scale: 110%;
-    transition: 250ms;
+    scale: 120%;
+    transition: 500ms;
   }
 }
 
@@ -55,20 +56,10 @@ header > img {
 
 .player-card:nth-child(odd):hover {
   background-image: linear-gradient(to left, #002c56, #005c5c);
-  transition: 500ms;
-  .headshot {
-    scale: 120%;
-    transition: 500ms;
-  }
 }
 
 .player-card:nth-child(even):hover {
   background-image: linear-gradient(to right, #002c56, #005c5c);
-  transition: 5000ms;
-  .headshot {
-    scale: 120%;
-    transition: 500ms;
-  }
 }
 
 .name,
